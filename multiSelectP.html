@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/virtual-select.min.css" />
+  </head>
+  <body>
+    <div style="margin: 30px; padding: auto; width: 100%">
+      <select name="item" id="slct">
+        <option value="1">item 1</option>
+        <option value="2">item 2</option>
+        <option value="3">item 3</option>
+        <option value="4">item 4</option>
+        <option value="5">item 5</option>
+        <option value="6">item 6</option>
+      </select>
+    </div>
+
+    <script src="dist/virtual-select.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      $(
+        VirtualSelect.init({
+          ele: "#slct",
+          multiple: true,
+        })
+      );
+    </script>
+  </body>
+</html>
