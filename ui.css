@@ -199,3 +199,99 @@
 .toast-error {
   background: #d5393c;
 }
+
+/* input  */
+
+.input {
+  background-color: #ffffff;
+  height: 32px;
+  width: 256px;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-field {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.input-field::placeholder {
+  padding: 4px;
+  padding-left: 8px;
+  color: #53575a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.help-text {
+  color: #53565a;
+  text-align: left;
+  vertical-align: text-top;
+  font-size: 12px;
+  font-family: Inter;
+  line-height: 16px;
+  border-style: hidden;
+  outline: none;
+  margin: 4px;
+}
+.input-lebel {
+  color: #53565a;
+  text-align: left;
+  vertical-align: text-top;
+  font-size: 12px;
+  font-family: Inter;
+  line-height: 16px;
+}
+
+.input-error .input {
+  border: 1px solid #d5393c;
+}
+.input-error .help-text {
+  color: #d5393c;
+}
+
+.input-error .input-lebel {
+  color: #d5393c;
+}
+.input-bg .input {
+  background: #f2f2f2;
+}
+
+.paragraph .input {
+  min-height: 64px;
+}
+.paragraph .input-field {
+  /* resize: none; */
+  min-height: 80%;
+}
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  resize: none; /*remove the resize handle on the bottom right*/
+}
+.paragraph .input::placeholder {
+  color: #d5393c;
+}
