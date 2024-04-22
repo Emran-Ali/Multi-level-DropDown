@@ -425,3 +425,97 @@ input[type="date"]:in-range::-webkit-datetime-edit-text {
 .disable img {
   filter: grayscale(80%);
 }
+
+/* Badge */
+
+.badge {
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  height: 24px;
+  border-radius: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge .text {
+  color: #19161d;
+  text-align: left;
+  vertical-align: text-top;
+  font-size: 12px;
+  font-family: Inter;
+  /* line-height: 16px; */
+  border-style: hidden;
+  outline: none;
+}
+.badge .icon {
+  height: 16px;
+  width: 16px;
+  margin: 0;
+  padding: 0;
+  border-style: hidden;
+  outline: none;
+  /* font-size: 20px; */
+}
+.badge .number {
+  background-color: #19161d;
+  color: white;
+  height: 16px;
+  width: 22px;
+  border-radius: 40px;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fade * {
+  filter: opacity(0.5);
+}
+
+.badge-bg {
+  background: #f2f2f2;
+}
+.progres {
+  color: white;
+  background: #2e61b4;
+}
+.done {
+  color: white;
+  background: #3e875e;
+}
+.warning {
+  color: white;
+  background: #e48731;
+}
+.failed {
+  color: white;
+  background: #d5393c;
+}
+.hold {
+  color: white;
+  background: #a56eff;
+}
+.group {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.task .text {
+  color: #ffffff;
+  text-align: left;
+  vertical-align: text-top;
+  font-size: 12px;
+  font-family: Inter;
+  line-height: 16px;
+  border-style: hidden;
+  outline: none;
+  width: 64px;
+}
