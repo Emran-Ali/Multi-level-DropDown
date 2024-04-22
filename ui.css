@@ -295,3 +295,133 @@ textarea {
 .paragraph .input::placeholder {
   color: #d5393c;
 }
+
+.input .icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input .icon {
+  padding: 8px;
+}
+
+input[type="date"]:in-range::-webkit-datetime-edit-year-field,
+input[type="date"]:in-range::-webkit-datetime-edit-month-field,
+input[type="date"]:in-range::-webkit-datetime-edit-day-field,
+input[type="date"]:in-range::-webkit-datetime-edit-text {
+  color: transparent;
+}
+
+/* Avatar */
+.avatar-circle-5 {
+  background: #fdd0d0;
+  height: 40px;
+  width: 40px;
+  border-radius: 120px;
+  padding: 1px;
+}
+.avatar-circle-4 {
+  background: #fdd0d0;
+  height: 32px;
+  width: 32px;
+  border-radius: 120px;
+  padding: 0px;
+}
+.avatar-circle-3 {
+  background: #fdd0d0;
+  height: 24px;
+  width: 24px;
+  border-radius: 120px;
+  padding: 0px;
+}
+.avatar-circle-2 {
+  background: #fdd0d0;
+  height: 20px;
+  width: 20px;
+  border-radius: 120px;
+  padding: 0px;
+}
+.avatar-circle-1 {
+  background: #fdd0d0;
+  height: 16px;
+  width: 16px;
+  border-radius: 120px;
+  padding: 0px;
+}
+.avatar-square-5 {
+  background: #fbdede;
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  padding: 0px;
+}
+.avatar-square-1 {
+  background: #fbdede;
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  padding: 0px;
+}
+.avatar-square-4 {
+  background: #fbdede;
+  height: 32px;
+  width: 32px;
+  border-radius: 8px;
+  padding: 0px;
+}
+.avatar-square-3 {
+  background: #fbdede;
+  height: 24px;
+  width: 24px;
+  border-radius: 8px;
+  padding: 0px;
+}
+.avatar-square-2 {
+  background: #fbdede;
+  height: 20px;
+  width: 20px;
+  border-radius: 8px;
+  padding: 0px;
+}
+.av {
+  display: flex;
+  flex: row;
+  gap: 8px;
+}
+.avatar-group {
+  height: 40px;
+  width: 208px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.avatar-group .avatar-circle-5 {
+  margin-right: -16px;
+  border: 1px solid white;
+}
+.avatar-group .avatar-circle-4 {
+  margin-right: -12px;
+  border: 1px solid white;
+}
+.avatar-group .avatar-circle-3 {
+  margin-right: -8px;
+  border: 1px solid white;
+}
+.avatar-group .avatar-circle-2 {
+  margin-right: -4px;
+  border: 1px solid white;
+}
+.avatar-group .avatar-text {
+  position: relative;
+  text-align: center;
+  background-color: #eaeaea;
+  color: #53565a;
+}
+
+.disable img {
+  filter: grayscale(80%);
+}
