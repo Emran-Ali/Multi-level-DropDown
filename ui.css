@@ -961,3 +961,62 @@ input[type="date"]:in-range::-webkit-datetime-edit-text {
 .togle input:checked + label {
   background: #19161d;
 }
+
+/* Tag  */
+.tag {
+  color: #19161d;
+  font-size: 12px;
+  background: #ffffff;
+  height: 24px;
+  border-radius: 20px;
+  padding: 4px 8px 4px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.tag button {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+.tag:hover {
+  background: #19161d1f;
+}
+.yellow {
+  background: #f7f8cf;
+}
+.yellow:hover {
+  background: #f7f8af;
+}
+.blue {
+  background: #e3f2f7;
+}
+.blue:hover {
+  background: linear-gradient(0deg, #e3f2f7, rgba(0, 0, 0, 0.08));
+}
+.red {
+  background: #fbdddf;
+}
+.red:hover {
+  background: #e7d4c7;
+}
+.dark {
+  color: #ffffff;
+  background: #19161d;
+}
+.dark button {
+  color: #ffffff;
+}
+.dark:hover {
+  background: #2d2a32;
+}
+.gray {
+  background: #e4dfef;
+}
+.gray:hover {
+  background: #d2cddc;
+}
