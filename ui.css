@@ -1020,3 +1020,117 @@ input[type="date"]:in-range::-webkit-datetime-edit-text {
 .gray:hover {
   background: #d2cddc;
 }
+
+/* Tab  */
+.tabs {
+  background-color: #f2f2f2;
+  height: 24px;
+  border-radius: 8px;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.large {
+  height: 32px;
+}
+.large .active {
+  height: 28px !important;
+}
+.tabs .tab {
+  color: #86888a;
+  font-size: 14px;
+  height: 20px;
+  border-radius: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  gap: 8px;
+  position: relative;
+  border-style: hidden;
+  outline: none;
+}
+.tabs .active {
+  color: #000;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px 0px #00000014;
+}
+.tab-text {
+  background: none;
+  border-bottom: 1px solid #ebebeb;
+  margin: 0;
+  padding: 0;
+  height: 24px;
+  padding: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+.tab-text .tab {
+  color: #86888a;
+  font-size: 14px;
+  background: none;
+  height: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  border-style: hidden;
+  outline: none;
+}
+.tab-text .active {
+  color: #000;
+  background: none !important;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #000;
+  border-radius: 0;
+}
+
+/* checkbox */
+
+.checkbox {
+  height: 20px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+.checkbox input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.checkbox label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  border-radius: 32px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+}
+
+.checkbox input:checked + label:after {
+  display: block;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  left: 2px;
+  transform: translateX(2px) scale(0.8) rotate(45deg);
+}
+.checkbox input:checked + label {
+  background: #19161d;
+}
