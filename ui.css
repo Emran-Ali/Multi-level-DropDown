@@ -577,9 +577,10 @@ input[type="date"]:in-range::-webkit-datetime-edit-text {
 /* Button */
 
 .btn-xl {
+  font-size: 16px;
   height: 48px;
   border: none;
-  border-radius: 40px;
+  border-radius: 48px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 14px;
@@ -607,7 +608,7 @@ input[type="date"]:in-range::-webkit-datetime-edit-text {
 .btn {
   height: 40px;
   border: none;
-  border-radius: 40px;
+  border-radius: 48px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 10px;
@@ -730,4 +731,149 @@ input[type="date"]:in-range::-webkit-datetime-edit-text {
 }
 .success:hover {
   background: #33704e;
+}
+.btn-text {
+  color: #000;
+  background: none;
+}
+.btn-text:hover {
+  color: #53575a;
+}
+
+.btn-link {
+  padding: 0px;
+  border-radius: 0;
+  color: #000;
+  background: none;
+  border-bottom: 1px solid #000;
+}
+
+/* Checkbox  */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  height: 18px;
+  width: 18px;
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Search  */
+.search {
+  background-color: #ffffff;
+  height: 32px;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  border: 1px solid #ebebeb;
+}
+.search input::placeholder {
+  color: #53575a;
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+.search .icon {
+  width: 16px;
+  height: 16px;
+  gap: 0px;
+  padding: 1px;
+  opacity: 0px;
+}
+.search input {
+  color: #19161d;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+.search-border {
+  border: 1px solid #2d2a32;
+}
+.search-bg {
+  background: #f2f2f2;
+  border: none;
+}
+.search-md {
+  height: 24px;
+  padding: 4px;
+}
+.search-sm {
+  height: 24px;
+  padding: 2px;
+}
+.search-round {
+  padding-left: 8px;
+  border-radius: 40px;
 }
