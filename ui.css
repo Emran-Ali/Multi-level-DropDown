@@ -877,3 +877,87 @@ input[type="date"]:in-range::-webkit-datetime-edit-text {
   padding-left: 8px;
   border-radius: 40px;
 }
+
+/* pagginate */
+.paginate {
+  height: 24px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.paginate * {
+  background: none;
+  cursor: pointer;
+  text-align: center;
+  height: 24px;
+  width: 24px;
+  font-size: 24px;
+  border-radius: 80px;
+  border-style: hidden;
+  outline: none;
+}
+
+.lg {
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+}
+.active {
+  background: #ebf1fc;
+  border-radius: 80px;
+  text-align: center;
+}
+
+/* Togle button  */
+
+.togle {
+  height: 20px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+.togle input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.togle label {
+  background: #ebebeb;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 36px;
+  height: 20px;
+  padding: 2px;
+  border-radius: 32px;
+}
+
+.togle label::after {
+  content: "";
+  box-shadow: 0px 2px 6px 0px #00000029;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 70px;
+  transition: 0.5s;
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: 4px;
+}
+.togle input:checked + label:after {
+  left: calc(100% - 4px);
+  transform: translateX(-100%);
+}
+.togle input:checked + label {
+  background: #19161d;
+}
